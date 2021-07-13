@@ -18,10 +18,28 @@ mongo = PyMongo(app)
 
 
 @app.route("/")
-@app.route("/get_collections")
+def index():
+    return render_template("index.html")
+
+
+@app.route("/collections")
 def collections():
-    collections = mongo.db.collections.find()
-    return render_template("collections.html", collections=collections)
+    return render_template("collections.html", page_title="Collections")
+
+
+@app.route("/care_guide")
+def care_guide():
+    return render_template("care_guide.html", page_title="Care Guide")
+
+
+@app.route("/contact")
+def contact():
+    return render_template("contact.html", page_title="Contact")
+
+
+@app.route("/login")
+def login():
+    return render_template("login.html", page_title="Login")
 
 
 if __name__ == "__main__":
