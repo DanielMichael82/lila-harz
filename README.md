@@ -1,4 +1,4 @@
-![Lila Harz Logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+![Lila Harz Logo](logo.jpg)
 
 [View the live project here.](heroku link)
 
