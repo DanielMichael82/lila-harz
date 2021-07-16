@@ -45,6 +45,11 @@ def login():
     return render_template("login.html", page_title="Login")
 
 
+@app.route("/coasters")
+def coasters():
+    return render_template("coasters.html", page_title="Coasters")
+
+
 if __name__ == "__main__":
     app.run(
         host=os.environ.get("IP", "0.0.0.0"),

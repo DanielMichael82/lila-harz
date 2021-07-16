@@ -1,0 +1,38 @@
+[
+    {
+        "product": "Bookmarks",
+        "callout": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "product_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tristique quam eu purus congue, nec consectetur metus suscipit. Aliquam vitae nunc molestie, tincidunt dui at, commodo lorem. Donec in bibendum ipsum.",
+        "image_source": "static/assets/img/portfolio-1.jpg"
+    },
+    {
+        "product": "Cake Stands",
+        "callout": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "product_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tristique quam eu purus congue, nec consectetur metus suscipit. Aliquam vitae nunc molestie, tincidunt dui at, commodo lorem. Donec in bibendum ipsum.",
+        "image_source": "https://imagizer.imageshack.com/v2/320x240q90/922/dBT42c.jpg"
+    },
+    {
+        "product": "Clocks",
+        "callout": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "product_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tristique quam eu purus congue, nec consectetur metus suscipit. Aliquam vitae nunc molestie, tincidunt dui at, commodo lorem. Donec in bibendum ipsum.",
+        "image_source": "static/assets/img/portfolio-3.jpg"
+    },
+    {
+        "product": "Coasters",
+        "callout": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "product_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tristique quam eu purus congue, nec consectetur metus suscipit. Aliquam vitae nunc molestie, tincidunt dui at, commodo lorem. Donec in bibendum ipsum.",
+        "image_source": "https://imagizer.imageshack.com/v2/320x240q90/922/UHepEN.jpg"
+    },
+    {
+        "product": "Jewelery Trays",
+        "callout": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "product_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tristique quam eu purus congue, nec consectetur metus suscipit. Aliquam vitae nunc molestie, tincidunt dui at, commodo lorem. Donec in bibendum ipsum.",
+        "image_source": "static/assets/img/portfolio-5.jpg"
+    },
+    {
+        "product": "Trays",
+        "callout": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "product_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tristique quam eu purus congue, nec consectetur metus suscipit. Aliquam vitae nunc molestie, tincidunt dui at, commodo lorem. Donec in bibendum ipsum.",
+        "image_source": "https://imagizer.imageshack.com/v2/320x240q90/923/bSuidb.jpg"
+    }
+]
