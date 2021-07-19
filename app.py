@@ -27,7 +27,20 @@ def index():
 
 @app.route("/collections")
 def collections():
-    return render_template("collections.html", page_title="Collections")
+    data = []
+    with open("data/products.json", "r") as json_data:
+        data = json.load(json_data)
+    return render_template("collections.html", products=data)
+
+@app.route("/collections/<product_name>")
+def about_product(product_name):
+    product = {}
+    with open("data/products.json", "r") as json_data:
+        data = json.load(json_data)
+        for obj in data:
+            if obj["url"] == product_name:
+                product = obj
+    return render_template("products.html", product=product)
 
 
 @app.route("/care_guide")

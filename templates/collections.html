@@ -7,78 +7,25 @@
         <h3 class="mb-5"><em>Collections</em></h3>
     </div>
 </header>
-{% for product in lilaharz %}
+
+{% for product in products %}
+
 <section class="content-section" id="portfolio">
     <div class="container px-4 px-lg-5">
         <div class="row gx-0">
             <div class="col-lg-6">
-                <a class="portfolio-item" href="#!">
+                <a class="portfolio-item" href="/collections/{{ product.url }}">
                     <div class="caption">
                         <div class="caption-content">
-                            <div class="h2">{{ product.bookmarks }}</div>
-                            <p class="mb-0">{{ product.bookmarks.product_descriptions }}</p>
+                            <div class="h2">{{ product.callout }}</div>
+                            <p class="mb-0">{{ product.description }}</p>
                         </div>
                     </div>
-                    <img class="img-fluid" src="{{ product.bookmarks.image_source }}" alt="..." />
-                </a>
-            </div>
-            <div class="col-lg-6">
-                <a class="portfolio-item" href="#!">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <div class="h2">{{ cake_stand.product }}</div>
-                            <p class="mb-0"></p>
-                        </div>
-                    </div>
-                    <img class="img-fluid" src="{{ cake_stand.image_source }}" alt="Green resin cake stand" />
-                </a>
-            </div>
-            <div class="col-lg-6">
-                <a class="portfolio-item" href="#!">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <div class="h2">Clocks</div>
-                            <p class="mb-0"></p>
-                        </div>
-                    </div>
-                    <img class="img-fluid" src="static/assets/img/portfolio-3.jpg" alt="..." />
-                </a>
-            </div>
-            <div class="col-lg-6">
-                <a class="portfolio-item" href="{{ url_for('coasters') }}">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <div class="h2">Coasters</div>
-                            <p class="mb-0"></p>
-                        </div>
-                    </div>
-                    <img class="img-fluid" src="static/assets/img/portfolio-4.jpg" alt="..." />
-                </a>
-            </div>
-            <div class="col-lg-6">
-                <a class="portfolio-item" href="#!">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <div class="h2">Jewellery Trays</div>
-                            <p class="mb-0"></p>
-                        </div>
-                    </div>
-                    <img class="img-fluid" src="static/assets/img/portfolio-5.jpg" alt="..." />
-                </a>
-            </div>
-            <div class="col-lg-6">
-                <a class="portfolio-item" href="#!">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <div class="h2">Trays</div>
-                            <p class="mb-0"></p>
-                        </div>
-                    </div>
-                    <img class="img-fluid" src="static/assets/img/portfolio-6.jpg" alt="..." />
+                    <img class="img-fluid" src="{{ product.image_source }}" alt="..." />
                 </a>
             </div>
         </div>
     </div>
-</section>
 {% endfor %}
+</section>
 {% endblock %}
