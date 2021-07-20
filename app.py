@@ -2,7 +2,7 @@ import os
 import json
 from flask import (
     Flask, flash, render_template,
-    redirect, request, session, url_for)
+    request)
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
 if os.path.exists("env.py"):
@@ -48,8 +48,11 @@ def care_guide():
     return render_template("care_guide.html", page_title="Care Guide")
 
 
-@app.route("/contact")
+@app.route("/contact", methods=["GET", "POST"])
 def contact():
+    if request.method == "POST":
+        flash("Thank you {}, we have received your message!".format(
+            request.form.get("name")))
     return render_template("contact.html", page_title="Contact")
 
 

@@ -56,7 +56,7 @@ body {
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
-  background-color: #fff;
+  background-color: #DED6F8;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -5257,26 +5257,6 @@ textarea.form-control-lg {
   background-color: #6A2E75 !important;
 }
 
-.bg-secondary {
-  background-color: #ecb807 !important;
-}
-
-.bg-success {
-  background-color: #198754 !important;
-}
-
-.bg-info {
-  background-color: #0dcaf0 !important;
-}
-
-.bg-warning {
-  background-color: #ecb807 !important;
-}
-
-.bg-danger {
-  background-color: #dc3545 !important;
-}
-
 .bg-light {
   background-color: #f8f9fa !important;
 }
@@ -8903,8 +8883,8 @@ section#contact form#contactForm :-ms-input-placeholder {
 }
 
 .page-section {
-  padding-top: 7.5rem;
   padding-bottom: 7.5rem;
+  background-color: #DED6F8;
 }
 
 .service-icon {

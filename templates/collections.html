@@ -11,17 +11,17 @@
 {% for product in products %}
 
 <section class="content-section" id="portfolio">
-    <div class="container px-4 px-lg-5">
+    <div class="container px-6 px-lg-5">
         <div class="row gx-0">
             <div class="col-lg-6">
                 <a class="portfolio-item" href="/collections/{{ product.url }}">
+                    <img class="img-fluid" src="{{ product.image_source }}" alt="..." />
                     <div class="caption">
                         <div class="caption-content">
                             <div class="h2">{{ product.callout }}</div>
                             <p class="mb-0">{{ product.description }}</p>
                         </div>
                     </div>
-                    <img class="img-fluid" src="{{ product.image_source }}" alt="..." />
                 </a>
             </div>
         </div>
