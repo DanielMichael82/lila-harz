@@ -28,20 +28,8 @@ def index():
 
 @app.route("/collections")
 def collections():
-    data = []
-    with open("data/products.json", "r") as json_data:
-        data = json.load(json_data)
-    return render_template("collections.html", products=data)
-
-@app.route("/collections/<product_name>")
-def about_product(product_name):
-    product = {}
-    with open("data/products.json", "r") as json_data:
-        data = json.load(json_data)
-        for obj in data:
-            if obj["url"] == product_name:
-                product = obj
-    return render_template("products.html", product=product)
+    products = list(mongo.db.products.find())
+    return render_template("collections.html", products=products)
 
 
 @app.route("/care_guide")
@@ -74,9 +62,10 @@ def sign_up():
         }
         mongo.db.users.insert_one(sign_up)
 
-        # put the new user into 'session' cookie
         session["user"] = request.form.get("username").lower()
         flash("Sign Up Successful!")
+        return redirect(url_for("profile", username=session["user"]))
+
     return render_template("sign_up.html")
 
 
@@ -90,9 +79,14 @@ def login():
         if existing_user:
             # ensure hashed password matches user input
             if check_password_hash(
-                existing_user["password"], request.form.get("password")):
+                existing_user["password"], request.form.get(
+                    "password")):
                     session["user"] = request.form.get("username").lower()
-                    flash("Welcome, {}".format(request.form.get("username")))
+                    flash("Welcome, {}".format(
+                        request.form.get("username")))
+                    return redirect(url_for(
+                        "profile", username=session["user"]))
+
             else:
                 # invalid password match
                 flash("Incorrect Username and/or Password")
@@ -111,7 +105,19 @@ def profile(username):
     # grab the session user's username from db
     username = mongo.db.users.find_one(
         {"username": session["user"]})["username"]
-    return render_template("profile.html", username=username)
+
+    if session["user"]:
+        return render_template("profile.html", username=username)
+
+    return redirect(url_for("login"))
+
+
+@app.route("/logout")
+def logout():
+    # remove user from session cookie
+    flash("You have been logged out")
+    session.pop("user")
+    return redirect(url_for("login"))
 
 
 if __name__ == "__main__":

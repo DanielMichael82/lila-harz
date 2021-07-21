@@ -10,17 +10,26 @@
 
 {% for product in products %}
 
-<section class="content-section" id="portfolio">
-    <div class="container px-4 px-lg-5">
-        <div class="row gx-0">
-            <div class="col-lg-6">
-                <div class="card" style="width: 18rem;">
-                    <img src="{{ product.image_source }}" class="card-img-top mx-auto image-fluid" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">{{ product.product_name }}</h5>
-                        <p class="lead md-5">{{ product.description }}</p>
-                        <p class="text-muted">{{ product.price}}</p>
-                        <a href="#" class="btn btn-primary">Add to wish list</a>
+<section class="py-5">
+    <div class="container px-4 px-lg-5 mt-5">
+        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+            <div class="col mb-5">
+                <div class="card h-100">
+                    <!-- Product image-->
+                    <img class="card-img-top" src="{{ product.image_source }}" alt="..." />
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">{{ product.product_name }}</h5>
+                            <p>{{ product.description }}</p>
+                            <!-- Product price-->
+                            {{ product.price }} + P&P
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center"><a class="btn btn-primary mt-auto" href="#">Add to wish-list</a></div>
                     </div>
                 </div>
             </div>
@@ -28,5 +37,7 @@
     </div>
 </section>
 {% endfor %}
-
 {% endblock %}
+
+
+                    
