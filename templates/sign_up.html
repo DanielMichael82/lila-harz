@@ -4,7 +4,7 @@
 <header class="masthead d-flex align-items-center">
     <div class="container px-4 px-lg-5 text-center">
         <h1 class="mb-1">Lila Harz</h1>
-        <h3 class="mb-5"><em>Contact Us</em></h3>
+        <h3 class="mb-5"><em>Sign Up</em></h3>
     </div>
 </header>
 
@@ -46,5 +46,14 @@
         </form>
     </div>
 </section>
+
+<div class="row">
+    <col class="12">
+        <p class="text-center">
+            Already Signed Up?
+            <a href="{{ url_for('login') }}" class="stretched-link">Log In</a>
+        </p>
+    </div>
+</div>
 
 {% endblock %}
