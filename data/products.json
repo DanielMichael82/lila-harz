@@ -1,38 +1,44 @@
 [
     {
-        "product": "Bookmarks",
+        "product_name": "Bookmarks",
         "callout": "Add some colour to reading",
         "description": "Bookmarks in all colours to hold the place in your book.",
-        "image_source": "static/assets/img/portfolio-1.jpg"
+        "price": "£5.00",
+        "image_source": "#"
     },
     {
-        "product": "Cake Stands",
+        "product_name": "Cake Stands",
         "callout": "Add some colour to your Afternoon-Tea",
         "description": "Our beautiful Cake Stand is a great centre-piece when hosting for friends and family.",
-        "image_source": "https://imagizer.imageshack.com/img923/1389/mLoHPG.jpg"
+        "price": "£5.00",
+        "image_source": "https://imagizer.imageshack.com/v2/320x240q90/922/dBT42c.jpg"
     },
     {
-        "product": "Clocks",
+        "product_name": "Clocks",
         "callout": "Who says clocks have to be dull?",
         "description": "Abstract style clocks to dramatically change a space.",
-        "image_source": "static/assets/img/portfolio-3.jpg"
+        "price": "£5.00",
+        "image_source": "#"
     },
     {
-        "product": "Coasters",
+        "product_name": "Coasters",
         "callout": "As pretty as a picture",
         "description": "Coasters to suit all vibes and add a colourful injection to any environment",
-        "image_source": "https://imagizer.imageshack.com/img924/7630/jfnDSa.jpg"
+        "price": "£5.00",
+        "image_source": "https://imagizer.imageshack.com/v2/320x240q90/924/Ozr7Lu.jpg"
     },
     {
-        "product": "Jewelery Trays",
+        "product_name": "Jewelery Trays",
         "callout": "Elegant & Simple",
         "description": "The perfect place to store all of your rings and necklaces.",
-        "image_source": "static/assets/img/portfolio-5.jpg"
+        "price": "£5.00",
+        "image_source": "#"
     },
     {
-        "product": "Trays",
+        "product_name": "Trays",
         "callout": "Beautiful & Versatile",
         "description": "Trays to store your skin care or rest on the sofa for your cups of tea!.",
-        "image_source": "https://imagizer.imageshack.com/img924/295/y8Ccxi.jpg"
+        "price": "£5.00",
+        "image_source": "https://imagizer.imageshack.com/v2/320x240q90/922/geXHz8.jpg"
     }
 ]

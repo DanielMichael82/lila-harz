@@ -11,21 +11,23 @@
 {% for product in products %}
 
 <section class="content-section" id="portfolio">
-    <div class="container px-6 px-lg-5">
-        <div class="row gx-0">
-            <div class="col-lg-6">
-                <a class="portfolio-item" href="/collections/{{ product.url }}">
-                    <img class="img-fluid" src="{{ product.image_source }}" alt="..." />
-                    <div class="caption">
-                        <div class="caption-content">
-                            <div class="h2">{{ product.callout }}</div>
-                            <p class="mb-0">{{ product.description }}</p>
+    <div class="container px-4 px-lg-5">
+        <div class="content-section-heading text-center">
+                <div class="col mb-5">
+                    <div class="card" style="width: 18rem;">
+                        <img src="{{ product.image_source }}" class="card-img-top mx-auto image-fluid" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ product.product_name }}</h5>
+                            <p class="lead md-5">{{ product.description }}</p>
+                            <p class="text-muted">{{ product.price}}</p>
+                            <a href="#" class="btn btn-primary">Add to cart</a>
                         </div>
                     </div>
-                </a>
+                </div>
             </div>
         </div>
     </div>
-{% endfor %}
 </section>
+{% endfor %}
+
 {% endblock %}
