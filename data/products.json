@@ -1,44 +1,38 @@
 [
     {
         "product_name": "Bookmarks",
-        "callout": "Add some colour to reading",
         "description": "Bookmarks in all colours to hold the place in your book.",
         "price": "£5.00",
-        "image_source": "#"
+        "image_source": "https://imagizer.imageshack.com/v2/320x240q90/922/Pygo74.jpg"
     },
     {
         "product_name": "Cake Stands",
-        "callout": "Add some colour to your Afternoon-Tea",
         "description": "Our beautiful Cake Stand is a great centre-piece when hosting for friends and family.",
-        "price": "£5.00",
+        "price": "£40.00",
         "image_source": "https://imagizer.imageshack.com/v2/320x240q90/922/dBT42c.jpg"
     },
     {
         "product_name": "Clocks",
-        "callout": "Who says clocks have to be dull?",
         "description": "Abstract style clocks to dramatically change a space.",
-        "price": "£5.00",
+        "price": "£25.00",
         "image_source": "#"
     },
     {
         "product_name": "Coasters",
-        "callout": "As pretty as a picture",
         "description": "Coasters to suit all vibes and add a colourful injection to any environment",
-        "price": "£5.00",
+        "price": "£8.50",
         "image_source": "https://imagizer.imageshack.com/v2/320x240q90/924/Ozr7Lu.jpg"
     },
     {
         "product_name": "Jewelery Trays",
-        "callout": "Elegant & Simple",
         "description": "The perfect place to store all of your rings and necklaces.",
-        "price": "£5.00",
-        "image_source": "#"
+        "price": "£15.00",
+        "image_source": "https://imagizer.imageshack.com/v2/320x240q90/924/9bJgJT.jpg"
     },
     {
         "product_name": "Trays",
-        "callout": "Beautiful & Versatile",
         "description": "Trays to store your skin care or rest on the sofa for your cups of tea!.",
-        "price": "£5.00",
+        "price": "£25.00",
         "image_source": "https://imagizer.imageshack.com/v2/320x240q90/922/geXHz8.jpg"
     }
 ]
