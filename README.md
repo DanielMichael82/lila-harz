@@ -7,9 +7,6 @@ https://responsivedesignchecker.com/
 This is the website for Lila Harz, a business project which the owner Remi Collins discovered a passion for creating resin homeware during lockdown in the UK. After craft-fair's and social media interest
 Remi is looking for this website to take her business to the next level.
 
-
-<h2 align="center"><img src=""></h2>
-
 # Table of contents
 
 - [UX](#User-Experience)
@@ -72,8 +69,6 @@ Remi is looking for this website to take her business to the next level.
 #### Frequent User Goals
 
         1. As a frequent user to the site, I want to see of new offers.
-        2. As a frequent user to the site, I want to see the gallery content grow.
-        3. As a frequent user to the site, I want to see if I can meet other like-minded photographers with local meet ups and photography challenges.
 
 
 ### Design
@@ -165,15 +160,11 @@ Each link will open in a separate tab in a browser.
 
 ## Testing
 
+I have completed the project so was unable to test in time
+
 ### Functionality Testing 
 
- I used Chrome DevTools throughout the project for testing and solving problems with responsiveness and style issues.
-
-
 ### Compatibility Testing
- Site was tested across multiple virtual mobile devices and browsers. I checked all supported devices in Chrome DevTools. 
- 
- I tested on hardware devices such as: Desktop, MacBook Pro 13, iPad 11.2, iPhone 8, iPhone 11 and Samsung a71.
 
 ### User stories
 
@@ -198,35 +189,38 @@ Each link will open in a separate tab in a browser.
 
 ### Further Testing
 
--   The website was tested on Google Chrome, Microsoft Edge and Safari browsers.
--   The website was viewed on a variety of devices such as Desktop, MacBook Pro 13, iPad 11.2, iPhone 11, iPhone 8 & Samsung a71.
--   A large amount of testing was done to ensure that all pages were linking correctly and looked great on all devices.
--   Friends and family have reviewed the site and highlighted any bugs and/or user experience issues.
+-  
 
 ### Known Bugs
 
--   On some mobile devices the Home page jumbotron pushes down overflowing the line break element.
--   When validating the CCS code, errors in the Bootstrap code was shown but i have been unable to fix.
+-   O
 
 ## Deployment
 
 ### Heroku
 
-The project was deployed on GitHub Pages. I used Gitpod as a development environment where I commited all changes to git version control system.
-I used push command in Gitpod to save changes into GitHub.
+[Heroku](https://www.heroku.com) is a Cloud Application Platform that enables developers to build, run, and operate applications in the cloud.
 
-To deploy a project I had to:
+Deployment process is as follows:
 
-- Log in to GitHub and click on repository to deploy [MS](https://github.com/DanielMichael82/d25photography)
-- Select `Settings` and find GitHub Pages section at the very bottom of the page
-- From source select `none` and then `Master` branch.
-- Click `Save` and page was deployed after auto-refresh.
->  Your site is published at https://danielmichael82.github.io/d25photography//
+Create a **requirements.txt** file to store depenecies of installed packages for the project. In the CLI type `pip freeze --local > requirements.txt`.
 
-To run localy:
-* Log in to GitHub and click on repository to download [MS1](https://github.com/DanielMichael82/d25photography)
-* Select `Code` and click Download the ZIP file.
-* After downloading you can extract the file and use it in your local environment.
+Create a file named **Procfile** to declare what commands are run by the application's dynos on the Heroku platform. For this project, run by the app.py file, the Procfile should contain:`web: python app.py`
+
+- Register for a free account on the Heroku [Signup](https://signup.heroku.com/login) page.
+- On the Dashboard, click the 'New' button and select 'Create new app'.
+- Choose a name and region.
+- Under the 'Settings' tab, click on 'Config Vars' to add Configuration Variables from the env.py file. Remember to use your own credentials.
+- In your CLI terminal install Heroku by typing `npm install -g heroku`
+- Select the 'Deploy' option from the menu.
+- Under 'Deployment method' select the GitHub option to connect to your GitHub repository. Ensure GitHub Username is selected and use the search function to find the relevant repository. It is recommended using a 'main' branch as default, due to GitHub depreciating the 'master' branch name.
+- Select Automatic deploys from the main branch and click 'Deploy Branch'.
+- Click on the 'Open App' button on the top-right to open the deployed app.
+- There is no difference between the deployed version and the development version.
+
+
+To run the project locally, in the terminal type `python app.py`
+- This will open a localhost address, which is provided in the CLI.
 
 
 ## Credits
@@ -254,11 +248,9 @@ To run localy:
 
 ### Media
 
--   All images were created by the developer.
+-   All images were created by the Nathan Davies.
 
 ### Acknowledgements
-
--   My Mentor Adegbenga Adeye for helpful feedback throughout the project.
 
 -   Tutor support at Code Institute for their support.
 
