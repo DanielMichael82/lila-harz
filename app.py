@@ -120,6 +120,11 @@ def logout():
     return redirect(url_for("login"))
 
 
+@app.route("/wish_list")
+def wish_list():
+    return render_template("wish_list.html")
+
+
 if __name__ == "__main__":
     app.run(
         host=os.environ.get("IP", "0.0.0.0"),

@@ -1,11 +1,11 @@
-![Lila Harz Logo](logo.jpg)
+![Lila Harz Logo](https://imagizer.imageshack.com/v2/320x240q90/924/Dg8shx.jpg)
 
-[View the live project here.](heroku link)
+[View the live project here.](https://lila-harz.herokuapp.com/)
 
 https://responsivedesignchecker.com/
 
-This is the website for D25 Photography, a hobby turned business project. Alongside this a focus for the site is to have a community section where photographers can meet up and share experiences and photography challenges. 
-This website is designed to be responsive and accessible on a range of devices, making it easy to navigate for potential customers.
+This is the website for Lila Harz, a business project which the owner Remi Collins discovered a passion for creating resin homeware during lockdown in the UK. After craft-fair's and social media interest
+Remi is looking for this website to take her business to the next level.
 
 
 <h2 align="center"><img src=""></h2>
@@ -47,42 +47,42 @@ This website is designed to be responsive and accessible on a range of devices, 
 ## User Experience (UX)
 
 
--	### Owners Business Goals
+### Owners Business Goals
 
-    -   1. As the owner of the website, I want this website to help present a new photography business to the public.
-        2. As the owner of the website, I want to be able to present a professional website to exhibit the skill and quality that I as a photographer has to offer.
+        1. As the owner of the website, I want this website to be the main hub of Lila Harz and the first place customers go to.
+        2. As the owner of the website, I want to be able to present a smart and colourful website. 
         3. As the owner of the website, I want to see engagement with the public to understand what they want from the business.
-        4. As the owner of the business, I have special offers for new customers, I want to reveal them on the site to gain customer interest.
-        5. As the owner of the website, I feel it is important to have a community around you to support you and your business. I want to build a community of photographer’s newcomers and experienced alike. 
 
 
 ### User stories
 
-    -   #### First Time User Goals
+#### First Time User Goals
 
-        1. As a first-time user to the site, I want to understand the main purpose of the site and learn more about D25 Photography and what they offer.
+        1. As a first-time user to the site, I want to understand what products Lila Harz offers.
         2. As a first-time user to the site, I want to be able to easily navigate throughout the site to find content.
-        3. As a first-time user to the site, I want to see what D25 Photography offer. I also want to locate their social media links to see their followings on social media to determine how trusted and known they are.
+        3. As a first-time user to the site, I want social media links to be readily available to broadcast what we sell.
 
-    -   #### Returning User Goals
+#### Returning User Goals
 
-        1. As a returning user, I want to access quality photos that have been taken by D25 Photography.
-        2. As a returning user, I want to know what D25 Photography offers to me as a customer.
-        3. As a returning user, I want to find the best way to get in contact with D25 Photography with any questions I have.
-        4. As a returning user, I want to find social media links.
+        1. As a returning user to the site, I want to access quality photos if the products Lila Harz offers. 
+        2. As a returning user to the site, I want to know what Lila Harz offers to me as a customer.
+        3. As a returning user to the site, I want to understand how to care for my resin pieces 
+        4. As a returning user to the site, I want to see discounts 
 
-    -   #### Frequent User Goals
-        1. As a Frequent User, I want to see of new offers.
-        2. As a Frequent User, I want to see the gallery content grow.
-        3. As a Frequent User, I want to see if I can meet other like-minded photographers with local meet ups and photography challenges.
+#### Frequent User Goals
+
+        1. As a frequent user to the site, I want to see of new offers.
+        2. As a frequent user to the site, I want to see the gallery content grow.
+        3. As a frequent user to the site, I want to see if I can meet other like-minded photographers with local meet ups and photography challenges.
 
 
 ### Design
-    -   #### Colour Scheme
+
+#### Colour Scheme
         -   
-    -   #### Typography
+#### Typography
         -   
-    -   #### Imagery
+#### Imagery
         -    
 
 -   ### Wireframes
@@ -128,11 +128,10 @@ Each link will open in a separate tab in a browser.
 
 ## Future Implementations
 
-1. 
-2. 
-3. 
-4. 
-5. 
+1. A Shopping Cart for purchases from the site.
+2. Colour options for each product.
+3. Testimonials section.
+4. A more extensive product listing.
 
 
 ## Technologies Used
@@ -141,11 +140,11 @@ Each link will open in a separate tab in a browser.
 
 -   [HTML5](https://en.wikipedia.org/wiki/HTML5)
 -   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
--   [Python]
+-   [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
 
 ### Frameworks, Libraries & Programs Used
 
-1. [Bootstrap 4.6.0:](https://getbootstrap.com/docs/4.6/getting-started/introduction/)
+1. [Bootstrap 5.0.:](https://getbootstrap.com/docs/5.0/getting-started/download/)
     - Bootstrap was used to assist with the responsiveness and styling of the website.
 1. [Google Fonts:](https://fonts.google.com/)
     - Google fonts were used to import the 'Raleway' font into the style.css file which is used on all pages throughout the project.
@@ -159,10 +158,6 @@ Each link will open in a separate tab in a browser.
     - GitHub is used to store the projects code after being pushed from Git.
 1. [Tinyjgp:](https://tinyjpg.com/)
     - Tinyjpg was used for resizing images
-1. [Imaging Edge:](https://imagingedge.sony.net/en-gb/ie-desktop.html)
-    - Imaging Edge was used to resize and edit all of the images on the site.
-1. [Autodesk Sketchbook:](https://apps.apple.com/gb/app/autodesk-sketchbook/id883738213#?platform=ipad)
-    - Autodesk Sketchbook was used to create the company logo.
 1. [Balsamiq:](https://balsamiq.com/)
     - Balsamiq was used to create the [wireframes]() during the design process.
 1. [Chrome DevTools:](https://developers.google.com/web/tools/chrome-devtools)
