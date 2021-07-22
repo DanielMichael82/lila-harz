@@ -30,15 +30,7 @@
             <li class="sidebar-nav-item"><a href="{{ url_for('collections') }}">Collections</a></li>
             <li class="sidebar-nav-item"><a href="{{ url_for('care_guide') }}">Care Guide</a></li>
             <li class="sidebar-nav-item"><a href="{{ url_for('contact') }}">Contact</a></li>
-            {% if session.user %}
-            <li class="sidebar-nav-item"><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
             <li class="sidebar-nav-item"><a href="{{ url_for('wish_list') }}">Wish List</a></li>
-            <li class="sidebar-nav-item"><a href="{{ url_for('logout') }}">Log Out</a></li>
-            {% else %}
-            <li class="sidebar-nav-item"><a href="{{ url_for('login') }}"><i class="far fa-user"></i> Login</a></li>
-            <li class="sidebar-nav-item"><a href="{{ url_for('sign_up') }}"><i class="fas fa-user-plus"></i> Sign Up</a>
-            </li>
-            {% endif %}
         </ul>
     </nav>
 
@@ -52,11 +44,11 @@
         <div class="container px-4 px-lg-5">
             <ul class="list-inline mb-5">
                 <li class="list-inline-item">
-                    <a class="social-link rounded-circle text-white mr-3" href="#!"><i
+                    <a class="social-link rounded-circle text-white mr-3" href="https://www.facebook.com/lilaharz/" target="_blank"><i
                             class="icon-social-facebook"></i></a>
                 </li>
                 <li class="list-inline-item">
-                    <a class="social-link rounded-circle text-white mr-3" href="#!"><i
+                    <a class="social-link rounded-circle text-white mr-3" href="https://www.instagram.com/lilaharz/" target="_blank"><i
                             class="icon-social-instagram"></i></a>
                 </li>
             </ul>
