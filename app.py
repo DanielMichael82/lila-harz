@@ -18,7 +18,7 @@ app.secret_key = os.environ.get("SECRET_KEY")
 mongo = PyMongo(app)
 
 
-@app.route("/index")
+@app.route("/")
 def index():
     data = []
     with open("data/lilaharz.json", "r") as json_data:
@@ -83,13 +83,6 @@ def edit_task(task_id):
     products = mongo.db.tasks.find_one({"_id": ObjectId(task_id)})
     categories = mongo.db.categories.find().sort("category_name", 1)
     return render_template("edit_wishlist.html", task=task, categories=categories)
-
-
-@app.route("/delete_item/<task_id>")
-def delete_item(task_id):
-    mongo.db.tasks.remove({"_id": ObjectId(task_id)})
-    flash("Item Successfully Deleted")
-    return redirect(url_for("wish_list"))
 
 
 if __name__ == "__main__":
